@@ -1,0 +1,59 @@
+.formulario-titulo {
+    color: white;
+    background: gray;
+    padding: 5px;
+    text-align: center;
+    font-family: monospace;
+}
+
+.formulario-contacto {
+    width: 95%;
+    max-width: 500px;
+}
+
+#formulario .contenedor {
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#formulario .contenedor-txa {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#formulario .contenedor-btn {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+#boton-contacto {
+    background: darkslategrey;
+    color: white;
+    width: 150px;
+}
+
+input {
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: solid 1px gray;
+}
+
+textarea {
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: solid 1px gray;
+}
+
+.col-48 {
+    width: 48%;
+}
+
+.col-100 {
+    width: 100%;
+}
