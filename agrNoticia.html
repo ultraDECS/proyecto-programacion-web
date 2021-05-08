@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caos News: Inicio</title>
+    <title>Caos News: Agregar Noticia</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
 </head>
@@ -57,6 +57,23 @@
         </div>
     </nav>
 
+    <section id="formulario">
+      <form action="" method="POST" class="formulario-contacto">
+        <h2 class="formulario-titulo">Agregar Noticia</h2>
+        <div class="contenedor">
+          <input type="text" name="txtAutor" id="txtAutor" class="col-100" placeholder="Nombre o seudónimo del autor">
+          <input type="text" name="txtTitulo" id="txtTitulo" class="col-100" placeholder="Título">
+        </div>
+        <div class="contenedor-txa">
+          <textarea name="txaTexto" id="txaTexto" cols="30" rows="10" class="col-100" placeholder="Texto de la noticia"></textarea>
+        </div>
+        <div class="contenedor-btn">
+          <input type="button" value="Agregar" id="boton-contacto" onclick="agregarNoticia()">
+        </div>
+      </form>
+    </section>
+
+    <script src="js/agrNoticia.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 </html>

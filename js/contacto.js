@@ -1,4 +1,4 @@
-class contacto {
+class Contacto {
     nombre;
     apellido;
     email;
@@ -71,7 +71,7 @@ function validarFormularioContacto() {
         mensajeTemp = mensajeTemp + "Debe ingresar un teléfono válido.\n";
     }
     if(mensaje.length < 10) {
-        mensajeTemp = mensajeTemp + "Debe ingresar un mensaje válido.\n";
+        mensajeTemp = mensajeTemp + "Debe ingresar un mensaje válido.";
     }
 
     return mensajeTemp;
@@ -89,15 +89,15 @@ function agregarContacto() {
         var telefono = document.getElementById("txtTelefono").value;
         var mensaje = document.getElementById("txaMensaje").value;
 
-        cont = new contacto();
+        contacto = new Contacto();
 
-        cont.setNombre(nombre);
-        cont.setApellido(apellido);
-        cont.setEmail(email);
-        cont.setTelefono(telefono);
-        cont.setMensaje(mensaje);
+        contacto.setNombre(nombre);
+        contacto.setApellido(apellido);
+        contacto.setEmail(email);
+        contacto.setTelefono(telefono);
+        contacto.setMensaje(mensaje);
 
-        arreglo[x] = JSON.stringify(cont);
+        arreglo[x] = JSON.stringify(contacto);
         x++;
         localStorage.setItem('contactos', arreglo);
         alert("Mensaje Enviado");
