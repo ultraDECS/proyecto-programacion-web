@@ -1,14 +1,12 @@
 .formulario-titulo {
-    color: white;
-    background: gray;
+    color: black;
     padding: 5px;
     text-align: center;
-    font-family: monospace;
+    font-family: sans-serif;
 }
 
 .formulario-contacto {
-    width: 95%;
-    max-width: 500px;
+    width: 95%;    
 }
 
 #formulario .contenedor {
@@ -16,9 +14,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    max-width: 700px;
 }
 
 #formulario .contenedor-txa {
+    max-width: 700px;
     padding: 10px 30px;
     display: flex;
     justify-content: center;
@@ -27,7 +27,8 @@
 #formulario .contenedor-btn {
     padding: 5px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    margin-left: 280px;
 }
 
 #boton-contacto {

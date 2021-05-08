@@ -9,57 +9,51 @@
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1">Caos News</span>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="agrNoticia.html">Agregar Noticia</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Categorías
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Categoría 1</a></li>
-                  <li><a class="dropdown-item" href="#">Categoría 2</a></li>
-                  <li><a class="dropdown-item" href="#">Categoría 3</a></li>
-                  <li><a class="dropdown-item" href="#">Categoría 4</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Destacado</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Sobre Nosotros
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Quienes Somos</a></li>
-                  <li><a class="dropdown-item" href="#">Donde Estamos</a></li>
-                </ul>
-              </li>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <div id="logo">
+        <img src="img/CAOS.png" alt="">
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="agrNoticia.html">Agregar Noticia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="categorias.html">Categorias</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sobre Nosotros
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="mision.html">Quienes Somos</a></li>
+              <li><a class="dropdown-item" href="mapa.html">Donde Estamos</a></li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
-          </div>
-        </div>
-    </nav>
-
-    <section id="formulario">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Iniciodesesion.html">Iniciar Sesión</a>
+          </li>
+        </ul>         
+      </div>
+    </div>
+  </nav>
+      <br>
+      <section id="contenido">
+        <h1>Contactanos</h1>
+      </section>
+      <section id="formulario">
+      <br>
       <form action="" class="formulario-contacto" method="POST">
-        <h2 class="formulario-titulo">Contáctanos</h2>
         <div class="contenedor">
           <input class="col-48" type="text" name="txtNombre" id="txtNombre" placeholder="Nombre">
           <input class="col-48" type="text" name="txtApellido" id="txtApellido" placeholder="Apellido">
@@ -73,7 +67,16 @@
           <input type="button" value="Enviar" id="boton-contacto" onclick="agregarContacto()">
         </div>
       </form>
-    </section>
+      </section>
+    <br>
+    <br>
+    <br>
+    <footer>
+      <div><h6>Siguenos en nuestras redes</h6> </div>
+      <div><a href="">Instagram</a></div>
+      <div><a href="">Facebook</a></div>
+      <div><a href="">Twitter</a></div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="js/contacto.js"></script>
